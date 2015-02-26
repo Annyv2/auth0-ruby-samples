@@ -1,3 +1,5 @@
+.ruby-version
+coverage
 *.gem
 *.rbc
 /.config
