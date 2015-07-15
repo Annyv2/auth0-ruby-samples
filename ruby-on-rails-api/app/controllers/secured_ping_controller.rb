@@ -1,4 +1,5 @@
-class SecuredPingController < SecuredController
+class SecuredPingController < ApplicationController
+  before_action :authenticate
 
   def ping
   	render :json => { 
