@@ -10,6 +10,11 @@ Knock.setup do |config|
   ## Default:
   # config.current_user_from_token = -> (claims) { User.find claims['sub'] }
 
+  # !!!
+  # This is only to make the example test cases pass, you should use a real
+  # user model in your app instead.
+  config.current_user_from_token = -> (claims) { Struct::User.new claims['sub'] }
+
 
   ## Expiration claim
   ## ----------------
