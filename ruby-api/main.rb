@@ -29,11 +29,11 @@ error InvalidTokenError do
   'Invalid token'
 end
 
-get '/protected' do
+get '/secured/ping' do
   validate_token env
   'All good. You can see it because token is valid'
 end
 
-get '/' do
+get '/ping' do
   'ping'
 end
