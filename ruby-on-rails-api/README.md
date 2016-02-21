@@ -23,3 +23,5 @@ Once you've set those 2 enviroment variables, run `bundle install`, then run `ra
 You can then try to do a GET to [http://localhost:3000/secured/ping](http://localhost:3000/secured/ping) which will throw an error if you don't send the JWT in the header.
 
 __Note:__ if you need to enable cross-origin resource sharing, check out the [rack-cors](https://github.com/cyu/rack-cors) gem.
+
+__Note:__ if you are using Windows, add the `tzinfo-data` gem to the gemfile.
