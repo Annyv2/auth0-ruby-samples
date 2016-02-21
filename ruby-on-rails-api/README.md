@@ -18,6 +18,8 @@ AUTH0_CLIENT_SECRET=myCoolSecret
 AUTH0_CLIENT_ID=myCoolClientId
 ````
 
-Once you've set those 2 enviroment variables, just run `rails s` and try calling [http://localhost:3000/ping](http://localhost:3000/ping)
+Once you've set those 2 enviroment variables, run `bundle install`, then run `rails s` and try calling [http://localhost:3000/ping](http://localhost:3000/ping)
 
 You can then try to do a GET to [http://localhost:3000/secured/ping](http://localhost:3000/secured/ping) which will throw an error if you don't send the JWT in the header.
+
+__Note:__ if you need to enable cross-origin resource sharing, check out the [rack-cors](https://github.com/cyu/rack-cors) gem.

@@ -1,0 +1,24 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    dotenv (2.1.0)
+    jwt (1.5.2)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    sinatra (1.4.7)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.2)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  dotenv
+  jwt (~> 1.5)
+  sinatra (~> 1.4)
+
+BUNDLED WITH
+   1.12.0.pre.1
